@@ -1,0 +1,24 @@
+{
+    "version": 4,
+    "configurations": [
+        {
+            /** 
+             * ms-vscode.cmake-tools plugin should be installed.
+             * 
+             * It provides data for C/C++ plugin,
+             * such as include paths, browse paths, defines, etc.
+             */
+            "name": "STM32",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "intelliSenseMode": "${default}",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "USE_HAL_DRIVER",
+                "STM32F767xx", //使用しているマイコンに合わせて変更
+                "__CC_ARM" // uint32_t等の型を定義するために必要
+            ]
+        }
+    ]
+}
