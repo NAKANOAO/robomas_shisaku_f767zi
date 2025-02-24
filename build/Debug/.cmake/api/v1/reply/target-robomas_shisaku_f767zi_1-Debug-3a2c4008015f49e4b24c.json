@@ -11,7 +11,9 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries"
+			"target_link_libraries",
+			"target_include_directories",
+			"target_sources"
 		],
 		"files" : 
 		[
@@ -25,13 +27,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 38,
+				"line" : 42,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 64,
+				"line" : 71,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 59,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 53,
 				"parent" : 0
 			}
 		]
@@ -42,7 +56,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11"
+					"fragment" : " -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -fno-rtti -fno-exceptions -fno-threadsafe-statics -g -std=gnu++17"
 				}
 			],
 			"defines" : 
@@ -62,6 +76,14 @@
 			],
 			"includes" : 
 			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/User/lib"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/User"
+				},
 				{
 					"backtrace" : 2,
 					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../Core/Inc"
@@ -97,14 +119,89 @@
 				{
 					"backtrace" : 2,
 					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../Drivers/CMSIS/Include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "DEBUG"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../User"
+					"define" : "STM32F767xx"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../User/lib"
+					"define" : "USE_HAL_DRIVER"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/User/lib"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/User"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../Core/Inc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../USB_DEVICE/App"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../USB_DEVICE/Target"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../Drivers/STM32F7xx_HAL_Driver/Inc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F7xx/Include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../Drivers/CMSIS/Include"
 				}
 			],
 			"language" : "C",
@@ -118,7 +215,6 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
 				1,
 				2,
 				3,
@@ -154,7 +250,11 @@
 				33,
 				34,
 				35,
-				36
+				36,
+				37,
+				38,
+				39,
+				40
 			]
 		},
 		{
@@ -182,6 +282,14 @@
 			"includes" : 
 			[
 				{
+					"backtrace" : 3,
+					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/User/lib"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/User"
+				},
+				{
 					"backtrace" : 2,
 					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../Core/Inc"
 				},
@@ -216,96 +324,12 @@
 				{
 					"backtrace" : 2,
 					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../Drivers/CMSIS/Include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../User"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../User/lib"
 				}
 			],
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				37
-			]
-		},
-		{
-			"compileCommandFragments" : 
-			[
-				{
-					"fragment" : " -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -fno-rtti -fno-exceptions -fno-threadsafe-statics -g"
-				}
-			],
-			"defines" : 
-			[
-				{
-					"backtrace" : 2,
-					"define" : "DEBUG"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "STM32F767xx"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "USE_HAL_DRIVER"
-				}
-			],
-			"includes" : 
-			[
-				{
-					"backtrace" : 2,
-					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../Core/Inc"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../USB_DEVICE/App"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../USB_DEVICE/Target"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../Drivers/STM32F7xx_HAL_Driver/Inc"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../Middlewares/ST/STM32_USB_Device_Library/Core/Inc"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F7xx/Include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../Drivers/CMSIS/Include"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../User"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/home/roxy/cubemx_folder/robomas_shisaku_f767zi_1/cmake/stm32cubemx/../../User/lib"
-				}
-			],
-			"language" : "CXX",
-			"sourceIndexes" : 
-			[
-				38,
-				39
+				41
 			]
 		}
 	],
@@ -375,259 +399,273 @@
 				34,
 				35,
 				36,
+				37,
 				38,
-				39
+				39,
+				40
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				37
+				41
 			]
 		}
 	],
 	"sources" : 
 	[
 		{
-			"backtrace" : 2,
+			"backtrace" : 4,
 			"compileGroupIndex" : 0,
-			"path" : "Core/Src/main.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/gpio.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/can.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/usart.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/stm32f7xx_it.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/stm32f7xx_hal_msp.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "USB_DEVICE/App/usb_device.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "USB_DEVICE/App/usbd_desc.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "USB_DEVICE/App/usbd_cdc_if.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "USB_DEVICE/Target/usbd_conf.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd_ex.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usb.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/system_stm32f7xx.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/sysmem.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 0,
-			"path" : "Core/Src/syscalls.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 1,
-			"path" : "startup_stm32f767xx.s",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 2,
-			"compileGroupIndex" : 2,
 			"path" : "User/cpp_main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 2,
-			"compileGroupIndex" : 2,
-			"path" : "User/lib/LED_GPIO.cpp",
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/main.c",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/gpio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/can.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/tim.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/usart.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/stm32f7xx_it.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/stm32f7xx_hal_msp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "USB_DEVICE/App/usb_device.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "USB_DEVICE/App/usbd_desc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "USB_DEVICE/App/usbd_cdc_if.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "USB_DEVICE/Target/usbd_conf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd_ex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usb.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/system_stm32f7xx.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/sysmem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "Core/Src/syscalls.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 2,
+			"path" : "startup_stm32f767xx.s",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

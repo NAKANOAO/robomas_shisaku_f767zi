@@ -2,6 +2,17 @@
     "files.associations": {
         "can.h": "c",
         "gpio.h": "c",
-        "cpp_main.hpp": "c"
+        "cpp_main.hpp": "c",
+        "typeinfo": "cpp",
+        "main.h": "c",
+        "stm32f7xx_hal.h": "c",
+        "stm32f7xx_hal_conf.h": "c",
+        "stm32f7xx_hal_can.h": "c",
+        "array": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "usart.h": "c",
+        "cstring": "cpp",
+        "can_lib.hpp": "c"
     }
 }

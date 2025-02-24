@@ -12,7 +12,9 @@
             "configurationProvider": "ms-vscode.cmake-tools",
             "intelliSenseMode": "${default}",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/User/**",
+                "${workspaceFolder}/User/lib/**"
             ],
             "defines": [
                 "USE_HAL_DRIVER",

@@ -68,6 +68,9 @@ void wrap_cpp_main_init(void);
 void wrap_cpp_main_while (void);
 
 
+void usb_cdc_rx_callback(const uint8_t *input, uint32_t size);
+
+
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

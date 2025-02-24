@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "can.h"
+#include "tim.h"
 #include "usart.h"
 #include "usb_device.h"
 #include "gpio.h"
@@ -96,6 +97,7 @@ int main(void)
   MX_CAN1_Init();
   MX_USART3_UART_Init();
   MX_USB_DEVICE_Init();
+  MX_TIM7_Init();
   /* USER CODE BEGIN 2 */
 
   wrap_cpp_main_init();

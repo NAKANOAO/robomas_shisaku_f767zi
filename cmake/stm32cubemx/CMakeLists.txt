@@ -4,7 +4,7 @@ project(stm32cubemx)
 add_library(stm32cubemx INTERFACE)
 
 # Enable CMake support for ASM and C languages
-enable_language(C CXX ASM)
+enable_language(C ASM)
 
 target_compile_definitions(stm32cubemx INTERFACE 
 	USE_HAL_DRIVER 
@@ -22,14 +22,13 @@ target_include_directories(stm32cubemx INTERFACE
     ../../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc
     ../../Drivers/CMSIS/Device/ST/STM32F7xx/Include
     ../../Drivers/CMSIS/Include
-    ../../User
-    ../../User/lib
 )
 
 target_sources(stm32cubemx INTERFACE
     ../../Core/Src/main.c
     ../../Core/Src/gpio.c
     ../../Core/Src/can.c
+    ../../Core/Src/tim.c
     ../../Core/Src/usart.c
     ../../Core/Src/stm32f7xx_it.c
     ../../Core/Src/stm32f7xx_hal_msp.c
@@ -55,6 +54,8 @@ target_sources(stm32cubemx INTERFACE
     ../../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c
     ../../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c
     ../../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_can.c
+    ../../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.c
+    ../../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c
     ../../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c
     ../../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.c
     ../../Core/Src/system_stm32f7xx.c
@@ -65,8 +66,6 @@ target_sources(stm32cubemx INTERFACE
     ../../Core/Src/sysmem.c
     ../../Core/Src/syscalls.c
     ../../startup_stm32f767xx.s
-    ../../User/cpp_main.cpp
-    ../../User/lib/LED_GPIO.cpp
 )
 
 target_link_directories(stm32cubemx INTERFACE
